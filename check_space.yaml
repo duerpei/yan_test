@@ -1,0 +1,16 @@
+metadata:
+    name: disk space check
+    format: "Lava-Test-Shell Test Definition 1.0"
+    description: "Check for disk space."
+    maintainer:
+        - yanxk.fnst@fujitsu.com
+    os:
+        - openembedded
+    scope:
+        - functional
+params:
+  DEVICE_TAGS: ""
+
+run:
+    steps:
+        - "./check_space.sh"
